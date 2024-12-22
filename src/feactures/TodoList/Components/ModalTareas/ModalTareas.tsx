@@ -138,7 +138,7 @@ export default function ModalTareas({
                 />
               )}
 
-              {task && (
+              {/* {task && (
                 <TextTareaFormContext
                   classNameI="col-span-2"
                   name="estado"
@@ -147,7 +147,7 @@ export default function ModalTareas({
                     required: "Este campo es requerido",
                   }}
                 />
-              )}
+              )} */}
 
               <Button type="submit" style="col-span-2" text="Guardar" />
             </div>

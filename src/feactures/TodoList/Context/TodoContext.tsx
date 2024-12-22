@@ -12,12 +12,16 @@ export interface ITodoContext {
   task: ToDo | undefined;
   updateTask: (task: ToDo) => void;
   setTask: React.Dispatch<React.SetStateAction<ToDo | undefined>>;
+  transition: boolean;
+  setTransition: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const TodoContext = createContext({});
 
 export const TodoProvider = ({ children }: { children: ReactNode }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [transition, setTransition] = useState(false);
+
   const [tasks, setTasks] = useState<ToDo[]>([]);
   const [task, setTask] = useState<ToDo | undefined>(undefined);
   const { createTask: create,getTasks:gettask,searchTask:searchtask,updateTask:updatetask } = useTask();
@@ -45,6 +49,7 @@ export const TodoProvider = ({ children }: { children: ReactNode }) => {
 
   const getTasks = () => {
     const res = gettask();
+    setTransition(false);
     setTasks(res);
   };
 
@@ -53,6 +58,8 @@ export const TodoProvider = ({ children }: { children: ReactNode }) => {
   }, []);
 
   const storage: ITodoContext = {
+    setTransition,
+    transition,
     isOpen,
     setTask,
     toggleModal,
