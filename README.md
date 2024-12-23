@@ -24,8 +24,7 @@ Asegúrate de tener instalados los siguientes programas:
 1. Clona este repositorio:  
 
    ```bash
-   git clone https://github.com/tu-usuario/react-tsx-vite.git
-
+   git clone https://github.com/cquispe21/vito-frond.git
 	2.	Accede al directorio del proyecto:
 
 cd react-tsx-vite
@@ -69,40 +68,3 @@ npm run preview
 # o con yarn
 yarn preview
 
-Estructura del proyecto
-
-├── public/          # Archivos estáticos
-├── src/             # Código fuente del proyecto
-│   ├── assets/      # Recursos como imágenes, fuentes, etc.
-│   ├── components/  # Componentes reutilizables
-│   ├── App.tsx      # Componente principal de la aplicación
-│   ├── main.tsx     # Punto de entrada de la aplicación
-│   ├── styles/      # Archivos de estilos
-├── index.html       # Archivo HTML principal
-├── package.json     # Dependencias y scripts del proyecto
-├── tsconfig.json    # Configuración de TypeScript
-├── vite.config.ts   # Configuración de Vite
-
-Personalización
-
-Puedes instalar librerías adicionales según tus necesidades. Algunos ejemplos comunes:
-	•	React Router: para enrutamiento.
-	•	Redux o Context API: para gestión del estado.
-	•	TailwindCSS o Styled Components: para estilos.
-
-Contribución
-
-Si deseas contribuir a este proyecto:
-	1.	Haz un fork del repositorio.
-	2.	Crea una rama para tus cambios: git checkout -b feature/nueva-funcionalidad.
-	3.	Realiza un commit: git commit -m "Añadida nueva funcionalidad".
-	4.	Sube tus cambios: git push origin feature/nueva-funcionalidad.
-	5.	Abre un Pull Request.
-
-Licencia
-
-Este proyecto está bajo la licencia MIT.
-
-¡Gracias por usar este proyecto base! 🚀
-
-Puedes personalizar este `README.md` según las características específicas de tu proyecto.
