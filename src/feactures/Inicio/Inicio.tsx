@@ -12,7 +12,7 @@ export const Inicio: FC = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="flex  relative">
+    <div className="flex dark:bg-gray-900   relative">
       <SidebarDesktop
         OpenMenu={OpenMenu}
         setOpenMenu={setOpenMenu}

@@ -49,7 +49,7 @@ function Contentnav({
         </button>
         <ul className="space-y-1">
           <>
-            <Link to="/taxflash">
+            <Link to="/vito/tareas">
               <li
                 className={` group flex hover:bg-gray-200 hover:text-gray-900  text-gray-300 items-center rounded-md  px-2 py-2 text-sm font-medium  peer-checked:bg-slate-900 
                        `}
