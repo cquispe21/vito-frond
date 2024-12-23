@@ -1,50 +1,68 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aquí tienes un ejemplo de archivo README.md para un proyecto de React con TypeScript configurado con Vite:
 
-Currently, two official plugins are available:
+# React + TypeScript + Vite  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este es un proyecto base para iniciar un desarrollo utilizando **React**, **TypeScript** y **Vite** como herramienta de construcción.  
 
-## Expanding the ESLint configuration
+## Características  
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- ⚡️ Rápido inicio gracias a Vite.  
+- 🛠️ Configurado para TypeScript.  
+- 💅 Estilizado con soporte para CSS y librerías opcionales.  
+- 📦 Preparado para producción con optimizaciones automáticas.  
 
-- Configure the top-level `parserOptions` property like this:
+## Requisitos previos  
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Asegúrate de tener instalados los siguientes programas:  
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **Node.js** (versión 16 o superior)  
+- **npm** o **yarn** como gestor de paquetes.  
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Instalación  
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Clona este repositorio:  
+
+   ```bash
+   git clone https://github.com/cquispe21/vito-frond.git
+	2.	Accede al directorio del proyecto: cd vito-frond
+
+
+	3.	Instala las dependencias:
+
+	npm install
+	# o con yarn
+	yarn install
+
+
+
+Uso
+
+Desarrollo
+
+Inicia el servidor de desarrollo con:
+
+npm run dev
+# o con yarn
+yarn dev
+
+El proyecto estará disponible en http://localhost:5173.
+
+Construcción para producción
+
+Para generar los archivos optimizados para producción, ejecuta:
+
+npm run build
+# o con yarn
+yarn build
+
+Los archivos se generarán en el directorio dist.
+
+Vista previa de producción
+
+Puedes previsualizar los archivos generados ejecutando:
+
+npm run preview
+# o con yarn
+yarn preview
+
