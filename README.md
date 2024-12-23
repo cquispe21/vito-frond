@@ -25,16 +25,14 @@ Asegúrate de tener instalados los siguientes programas:
 
    ```bash
    git clone https://github.com/cquispe21/vito-frond.git
-	2.	Accede al directorio del proyecto:
-
-cd react-tsx-vite
+	2.	Accede al directorio del proyecto: cd vito-frond
 
 
 	3.	Instala las dependencias:
 
-npm install
-# o con yarn
-yarn install
+	npm install
+	# o con yarn
+	yarn install
 
 
 
