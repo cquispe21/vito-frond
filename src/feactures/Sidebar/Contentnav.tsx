@@ -10,11 +10,8 @@ interface ContentnavProps {
 }
 function Contentnav({
   isHovered,
-  setIsHovered,
   OpenMenu,
-  setOpenMenu,
   OpenMenuMobile,
-  setOpenMenuMobile,
 }: ContentnavProps) {
   return (
     <>

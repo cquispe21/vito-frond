@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect} from "react";
 import TodoContext, { ITodoContext } from "../Context/TodoContext";
 import moment from "moment";
 import DateIcon from "../../../shared/Icons/DateIcon";

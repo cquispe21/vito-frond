@@ -10,8 +10,8 @@ export default function TodoLayout() {
     <>
       <ModalTareas isOpen={isOpen} onClose={toggleModal} />
       <div className="flex justify-between items-center">
-        <h2 className="font-semibold text-2xl dark:text-gray-50">Lista de Tareas</h2>
-        <Button text="Agregar Tarea" onClick={toggleModal} />
+        <h2 className="font-semibold text-2xl dark:text-gray-50">Lista de Tickets</h2>
+        <Button text="Crear Ticket" onClick={toggleModal} />
       </div>
       <ListTask />
     </>

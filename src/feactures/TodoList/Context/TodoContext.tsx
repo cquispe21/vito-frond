@@ -1,7 +1,6 @@
 import { createContext, ReactNode, useEffect, useState } from "react";
 import { ToDo } from "../../../domain/Todo/task";
 import useTask from "../../../application/Task/useTask";
-import { miembros } from "../../../shared/data/miembros";
 
 export interface ITodoContext {
   isOpen: boolean;

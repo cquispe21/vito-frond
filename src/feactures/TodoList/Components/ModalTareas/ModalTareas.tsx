@@ -16,10 +16,7 @@ interface ModalTareasIPropsItems {
   onClose: () => void;
   stateEdit?: boolean;
 }
-export default function ModalTareas({
-  isOpen,
-  onClose,
-}: ModalTareasIPropsItems) {
+export default function ModalTareas({isOpen,onClose}: ModalTareasIPropsItems) {
   const { createTask, task, setTask, updateTask } = useContext(
     TodoContext
   ) as ITodoContext;

@@ -60,8 +60,11 @@ const SidebarMobile: React.FC<SidebarMobileProps> = ({ OpenMenuMobile, setOpenMe
               </div>
               <div>
             <Contentnav
-              
+              OpenMenu={false}
+              isHovered={false}
+              setIsHovered={() => {}}
               OpenMenuMobile={OpenMenuMobile}
+              setOpenMenu={() => {}}
               setOpenMenuMobile={setOpenMenuMobile}
             />
           </div>

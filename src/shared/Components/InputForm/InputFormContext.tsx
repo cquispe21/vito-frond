@@ -25,7 +25,6 @@ export const InputFormContext = ({
   value,
   type,
   title,
-  isHook,
   isPlaceHolder,
   classNameI
 }: IFormContext) => {
